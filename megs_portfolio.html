@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="ms_script.js"></script>
+    <link rel="stylesheet" type="text/css" href="ms_stylesheet.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/52efd9d16f.js" crossorigin="anonymous"></script>
+    <title>Margaret Summers</title>
+  </head>
+  <body id="body">
+    <div class="menu" id="topMenu" style="position: absolute; left: 30vw;">
+        <button id="menuBtn" style="border: none;" onclick="moveCircle(1)">HOME</button>
+        <button id="menuBtn" onclick="moveCircle(2)">PORTFOLIO</button>
+        <button id="menuBtn" onclick="moveCircle(3)">ABOUT ME</button>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+        <!--------------------- TITLE SECTION ----------------------->
+        <div id="name" class="mainSection">
+          <div class="logo">
+            <img src="images/Name_logo.png" alt="" style="width: 100%">
+            <p>Indigenous Game Designer and Programmer</p>
+          </div>
+        </div>
+          <!--------------------- ABOUT ME SECTION ---------------------->
+        <div id="AboutSec" class="mainSection">
+            <div class="abPic">
+              <img src="images/Picture.jpg" alt="" style="border-radius: 50%; width: 25vw; border-bottom: 2vh #EAE2ED solid; border-right: 2vw #EAE2ED solid">
+            </div>
+            <div class="abTitle">
+              <h1 class="name">About the Artist</h1>
+            </div>
+            <div class="medBox abBio" style="height: 50vh;">
+                <div id="Ab1" style="display: none;">
+                    <h3>Professional Information:</h3>
+                    <div>
+                      <h4>Skills:</h4>
+                      - Fluent in English<br>
+                      - Proficient in French<br>
+                      - Experience time management <br>
+                      - Fast Learner<br>
+                      - Experience in Stress management<br>
+                      <br>
+                      - Proficient in multiple programming languages (C++, C#, PHP, Java, JavaScript)<br>
+                      - Experience in designing and programming websites<br>
+                      - Proficient in Unity game engine<br>
+                      - Experience in 3D modeling in Blender<br>
+                      <br>
+                    </div>
+                    <div>
+                      <h4>Work Experience</h4>
+                      ConnectWell Summer Support Staff, Summer 2021- 2022<br>
+                      ConnectWell Community Health - Ottawa, ON<br>
+                      Supervising and entertaining children on the autism spectrum<br>
+                      <br>
+                      Assistant Dance Teacher, Summer 2020<br>
+                      The Studio school of dance - Ottawa, ON<br>
+                      Supervising young dance students<br>
+                      <br>
+                      Ski Instructor, CSIA level one certified, Winter 2017-2020<br>
+                      Mont Cascades - Cantley, QC<br>
+                      Instructing young children to ski in both French and English<br>
+                      <br>
+                    </div>
+                    <div>
+                      <h4>Education:</h4>
+                      Concordia University, Montreal, QC from 2020-2025<br>
+                      - BFA, Specialization in Computation Arts<br>
+                      Glebe Collegiate Institute, Ottawa, ON from 2016-2020<br>
+                      - OSSD, Secondary School Diploma, Extended French Certificate<br>
+                      Additional<br>
+                      - Honour roll from 2017-2020<br>
+                      - Dorothy Perrett Memorial IC Scholarship<br>
+                      - French Immersion Certificate (DELF Level B2)<br>
+                    </div>
+                </div>
+                <div id="Ab2" style="overflow: auto;">
+                  <p class="abtText">My name is Margaret Summers and I am an upcoming game developer.
+                    <br><br>I specialize in game development and throughout my studies I have learned to program in multiple languages for a range of different digital mediums and platforms. My passion is developing games and other digital media that immerse audiences in a new world of my own creation. Through the medium of games, I hope to make topics considered to be difficult more accessible in an entertaining and challenging way. <n>
+                    <br><br>By using more experimental game mechanics and explorative design, I strive to build a narrative that can convey a wide range of themes and topics. My projects aim to allow the audience to explore and learn about themes or topics through the rules of these new worlds. I believe in learning through ones own experiences and learning the boundaries and results of your actions through mistakes. I use my work to push people outside of their comfort zone to broaden their horizons through creative experiences.
+                  </p>
+                </div>
+                <div id="Ab3" style="display: none">
+                  <button class="abBtn" style="width: 9rem; background-color: #DDCBE2;">&#9993;</button>
+                  <h1 class="name" style="text-align: center;">Contact Me</h1>
+                  <p>To contact me for freelance or other potential work you can contact me by email megsummers.design@gmail.com.
+                    <br>I am currently available for work, so feel free to contact me.
+                  </p>
+                  <a href="mailto:megsummmers.design@gmail.com">
+                    <button class="abBtn"><i class="fa fa-envelope"></i></button>
+                  </a>
+                  <a href="https://www.instagram.com/megsumm10/?hl=en">
+                    <button class="abBtn"><i class="fa fa-instagram"></i></button>
+                  </a>
+                  <a href="www.linkedin.com/in/margaret-summers-159435250">
+                    <button class="abBtn"><i class="fa fa-linkedin"></i></button>
+                  </a>
+                  <a href="https://megsumm.itch.io/">
+                    <button class="abBtn"><i class="fa fa-gamepad"></i></button>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <!---------------------- FEATURED PROJECTS --------------------->
+        <div id="FeaturedSec" class="mainSection">
+          <div class="topText">
+            <h2>Featured Projects</h2>
+            <h4>Highlights of my work from over the years</h4>
+          </div>
+          <div class="lgPreview">
+            <img src="images/WB_title.png" alt="Placeholder" class="smallImg">
+          </div>
+          <div class="preview preview1">
+            <div class="smallBox" style='background-image: url("images/WB_title.png");'>
+              <div>
+                <h3>Winter Break</h3>
+              </div>
+            </div>
+          </div>
+          <div class="preview preview2">
+            <div class="smallBox"  style='background-image: url("images/LC_outside3.jpeg");'>
+              <div>
+                <h3>A Lost World</h3>
+              </div>
+            </div>
+          </div>
+          <div class="preview preview3">
+            <div class="smallBox"  style='background-image: url("images/zine_full1.png");'>
+              <div>
+                <h3>Grocery Zine</h3>
+              </div>
+            </div>
+          </div>
+          <div class="preview preview4">
+            <div class="smallBox"  style='background-image: url("images/zine_full1.png");'>
+              <div>
+                <h3>Reboot</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------- PORTFOLIO SECTION ---------------------->
+        <div id="PortfolioSec" class="mainSection" >
+          <div class="portfolio">
+            <!--------------------- BOTTOM PAGE --------------------->
+            <div class="sections">
+              <button class="secBtn" id="secBtn" onclick="changeSection(1)">GAMES</button>
+            <button class="secBtn" onclick="changeSection(2)">3D WORK</button>
+            <button class="secBtn" onclick="changeSection(3)">GRAPHIC</button>
+            </div>
+              <!------------------- VIDEO GAME SECTION ------------------->
+              <div class="bigBox" id="GameSec" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                <button id="Galeft" style="position: relative; right: 30vw" class="pfFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
+                <div id="PfGa1" style="display: contents">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Winter Break</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Unity/C# in Collaboration with Percy Ngyuen & Angel Cella Cenerini</h2>
+                    <p class="pfText">
+                      Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
+                      ​<br><br>
+                      On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.
+                    </p>
+                    <a href="https://megsumm.itch.io/winter-break">
+                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
+                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="PfGa2" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">No Clue</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/NC_title.png" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(14).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(15).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(16).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(17).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(18).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/NC_(19).jpg" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Unity/C# in Collaboration with Daniel Cacatian & Alex Lorrain</h2>
+                    <p class="pfText">
+                      No Clue is a point-and-click game that sees the player trying to hide evidence in the houses of four infamous horror villains, an alien, a cult leader, a serial killer, and a hitman. You have two minutes to find all the evidence scattered around their unique houses in order to prove their innocence and keep them out of jail.
+                      <br><br>
+                      This was a group project with the challenge of making a game with only the mouse. We really tried to push the story in this one due to the limited controls. We decided to make the game ironic as you need to prove the innocence of four characters who are clearly suspicious and have bad intentions.
+                    </p>
+                    <a href="https://megsumm.itch.io/no-clue"><button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button></a>
+                    
+                  </div>
+                </div>
+                <div id="PfGa3" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Reboot</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/Rb_(1).png" alt="Placeholder" class="bigImg">
+                      <img src="images/Rb_(6).png" alt="Placeholder" class="bigImg">
+                      <img src="images/Rb_(8).png" alt="Placeholder" class="bigImg">
+                      <img src="images/Rb_(9).png" alt="Placeholder" class="bigImg">
+                      <img src="images/Rb_(10).png" alt="Placeholder" class="bigImg">
+                      <img src="images/Rb_(11).png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Unity/C# in Collaboration with Luka Akatseru & Che Tan</h2>
+                    <p class="pfText">
+                      Re-boot was a game created from the theme of rebirth.We decided to create a game about a robot trying to escape the laboratory it was made in. Using the robot's ability to shed its body and respawn in a new one the player will solve puzzles to escape. The Player will have to use their head to get out of labratory and free the robot before it runs out of body doubles!
+                      <br><br>I contributed the code to this game, having coded the entire thing in Unity and C#. The art was provided by Luka Akatseru and the level/sound design provided by Che Tan</p>
+                    <a href="https://megsumm.itch.io/reboot"><button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button></a>
+                    <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
+                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="PfGa4" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Barn Gambles</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/BG_title.png" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(20).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(21).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(22).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(23).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(25).jpg" alt="Placeholder" class="bigImg">
+                      <img src="images/BG_(26).jpg" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Unity/C# in Collaboration with Angel Cella Cenerini</h2>
+                    <p class="pfText">Barn Gambles is a game made around the idea gamebling and how quickly it can become an addiction. Play along as you train your horse and race it along your many rivals to earn money. Continue to invest in your horse's statistics to earn more prize moeny and beat your deadly rival, Gian Pasticcio.
+                      <br><br>
+                      We decided to focus in on horse gamebling as its the gambline form most associated with statistics. Instead of relying solely on luck, horse gamebling incorperates the status of the horse themselves into the equation. We also wanted our game to be light hearted and fun take on a serious issues to bring a larger audience.</p>
+                      <a href="https://megsumm.itch.io/barn-gambles"><button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button></a>
+                      
+                  </div>
+                </div>
+                <div id="PfGa5" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Grow your city</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/GYC_title.png" alt="Placeholder" class="bigImg">
+                      <img src="images/GYC_demo.png" alt="Placeholder" class="bigImg">
+                      <img src="images/GYC_prompt.png" alt="Placeholder" class="bigImg">
+                      <img src="images/GYC_tut.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Unity/C# As a research project about environment awareness</h2>
+                    <p class="pfText">Grow your city is a 2D top-down game centred around resource management and maintaining the health of your worlds environment. The core gameplay consists of managing and balancing your city's resources, population and the well-being of the environment around you. Throughout the game, the player will also be faced with scenarios meant to mimic real-life issues to judge your reaction. In the end, your score will reflect your choices throughout the game and how your priorities would reflect in real life.
+                      <br><br>
+                      I set out to explore the question, "In the age of constant media intake, how conscious are we of our effect on the environment and what we can do to help?" The goal is to push the players to make decisions and live through the consequences to learn about their environmental impact. The "best" score of the game is achieving the perfect balance of evolving your town and increasing your population while still maintaining the health of world you live in. </p>
+                      <a href="https://megsumm.itch.io/grow-your-city"><button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button></a>
+                    </a>
+                  </div>
+                </div>
+                <button id="Garight" style="position: relative; margin-top: 30vh; left: 43vw" class="pfFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
+              </div>
+              <!-------------------- 3D MODELLING SECTION -------------------->
+              <div class="bigBox" id="ModelSec" style="display: none;border-top-left-radius: 0;border-top-right-radius: 0;">
+                <button id="3Dleft" style="position: relative; right: 30vw" class="pfFloatBtn" onclick="changeProject('Pf3D', 'left')"><i class="fa fa-chevron-left"></i></button>
+                <div id="Pf3D1" style="display: contents">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">A lost world</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/LC_cave1.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_cave2.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_cave3.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_outside1.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_outside2.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_outside3.jpeg" alt="Placeholder" class="bigImg">
+                      <img src="images/LC_outside4jpeg" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Blender from Jan to April 2023</h2>
+                    <p class="pfText">
+                      A lost world was a project to create a 3D environment based on a fantasy world. The viewer is walked through 3 small tableau environments from a different world as they attempt to deciper what happened to the lost world.
+                      <br><br>
+                      Explore through the abandonned mine shaft overrun with crystals, the flower field, the ruins of a temple to make it see the extent of the world at the cliff's edge. This project took a full semster to make and pushed my knowledge of blender and textures. 
+                    </p>
+                    <a href="https://youtu.be/o5y3mgXqeO4" target="_blank" rel="noopener noreferrer">
+                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="Pf3D2" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Realistic environment</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/Env_1.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Env_2.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Env_3.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Env_4.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in BlenderCharacter Model made in Blender 2021</h2>
+                    <p class="pfText">
+                      This was a collaborative blender project with Margaret Beaumont-Savvas. We were tasked with turning a pre-exisiting space into a futurisitc environment. We chose a place from the Palais de Congres in Montreal, QC. There was an art piece meant to mimic trees so we decided to turn it into actual trees.
+                      <br><br>
+                      Working togther we modelled the entire scene ourseleves including a brand new fountain, trees lining the space and comfortable seats on the grass. The lighting was a combination of the fountain lights and purple lights to help the trees survive indoors.
+                    </p>
+                  </div>
+                </div>
+                <div id="Pf3D3" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Character Model</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/BearC_1.png" alt="Placeholder" class="bigImg">
+                      <img src="images/BearC_2.png" alt="Placeholder" class="bigImg">
+                      <img src="images/BearC_3.png" alt="Placeholder" class="bigImg">
+                      <img src="images/BearC_4.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in BlenderCharacter Model made in Blender 2022</h2>
+                    <p class="pfText">
+                      This character was created by scratch to learn about rigging and animating a human like model. Her design is meant to look like a young girl in a bear sweater with a generally cyberpunk aesthetic. Her focal point, the bear sweater, was meant to be cute and stylized but also give her a more unique look.
+                      <br><br>
+                      On top of modelling this character, a walk cycle was also made to test out animating in blender and understanding the anatomy of a walk cycle. After animating her walk cycle, she was also brought into the game engine unity to test the animation further.
+                    </p>
+                    <a href="https://youtu.be/4qM_heWxNtU" target="_blank" rel="noopener noreferrer">
+                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="Pf3D3" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Diorama</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/Diorama_1.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Diorama_2.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Diorama_3.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Diorama_4.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Diorama_5.png" alt="Placeholder" class="bigImg">
+                      <img src="images/Diorama_6.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Blender, this haunted house model made in 2022</h2>
+                    <p class="pfText">
+                      This diorama was made as a low-poly modelling exercise as well as a way to test darker lighting. The creative process behind this house was developing a wide range of small props to make the house look haunted and creepy while still embracing the cute aspect of low-poly models.
+                      <br><br>
+                      As for the lighting, the test was to light the scene almost completely from props on the scene. There are lights inside the house to act as a main light source with smaller sources giving more colour and light to the scene. This includes a pentagram in the back that gives off a creepy aesthetic and some lanterns in the front yard to give a more comfortable but still eerie feeling.
+                    </p>
+                    <a href="https://youtu.be/v9f21M7lM4g" target="_blank" rel="noopener noreferrer">
+                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="Pf3D4" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Self Portrait</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/FaceM_1.png" alt="Placeholder" class="bigImg">
+                      <img src="images/FaceM_2.png_2.png" alt="Placeholder" class="bigImg">
+                      <img src="images/FaceM_3.png_3.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Blender, this a self portrait of myself made in 2022</h2>
+                    <p class="pfText">
+                      TBA
+                      <br><br>
+                    </p>
+                    <a href="https://youtu.be/re0Pa8Pe2zo" target="_blank" rel="noopener noreferrer">
+                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div id="Pf3D5" style="display: none">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Experiments</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/random_1.png" alt="Placeholder" class="bigImg">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>A variety of projects create in Blender between 2021-2022</h2>
+                    <p class="pfText">
+                      TBA
+                      <br><br>
+                    </p>
+                  </div>
+                </div>
+                <button id="3Dright" style="position: relative; margin-top: 30vh; left: 48vw" class="pfFloatBtn" onclick="changeProject('Pf3D', 'right')"><i class="fa fa-chevron-right"></i></button>
+              </div>
+              <!--------------- GRAPHIC DESIGN SECTION ------------->
+              <div class="bigBox" id="DesignSec" style="display: none;border-top-left-radius: 0;border-top-right-radius: 0;">
+                <button id="Ranleft" style="position: relative; right: 30vw" class="pfFloatBtn" onclick="changeProject('PfRan', 'left')"><i class="fa fa-chevron-left"></i></button>
+                <div id="PfRan1" style="display: contents">
+                  <div class="pfLeft">
+                    <div class="pfTitle">
+                      <h2 class="smallTitle" style="margin-bottom: auto">Grocery Prices Zine</h2>
+                    </div>
+                    <div class="imgScroll">
+                      <img src="images/zine_cover1.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
+                      <img src="images/zine_cover2.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
+                      <img src="images/zine_full1.png" alt="Placeholder" class="bigImg">
+                      <img src="images/zine_full2.png" alt="Placeholder" class="bigImg">
+                      <img src="images/zine_full3.png" alt="Placeholder" class="bigImg">
+                      <img src="images/zine_inside1.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
+                      <img src="images/zine_inside2.jpeg" alt="Placeholder" class="bigImg" style="width: 35vh">
+                    </div>
+                  </div>
+                  <div class="pfRight">
+                    <h2>Created in Procreate and printed to create a physical copy</h2>
+                    <p class="pfText">
+                      A set of 3 miniature zines created in response to the rising grocery prices of this decade. They gives tips and tricks on how to get around inflation by shopping smarter and making meals that use all your ingredients. This zine is meant for students and/or young adults to help them navigate a the new world where the prices to eat has skyrockected.
+                      ​<br><br>
+                      Illustrated on Procreate, these zines were designed to be printed out and used a as pamphlets for universities and other youth spaces. They use only 1 colour to reduce the printing costs.
+                    </p>
+                  </div>
+                </div>
+                <button id="Ranright" style="position: relative; margin-top: 30vh; left: 48vw" class="pfFloatBtn" onclick="changeProject('PfRan', 'right')"><i class="fa fa-chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+    </div>
+  </body>
+</html>

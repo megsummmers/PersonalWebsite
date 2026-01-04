@@ -4,7 +4,6 @@
 }
 
 html {
-    height: 100%;
     background-repeat:inherit;
     background-image: linear-gradient(to bottom right, #AB89B5, #C9B0D1, #EAE2ED);
     font-family: "Poppins", sans-serif;
@@ -12,7 +11,33 @@ html {
 
 body {
     height: 100%;
+    width: 100%;
+    display: block;
     margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .menu {
@@ -57,29 +82,20 @@ body {
     text-align: center;
 }
 
-.simpleMenuBtn{
-    height: 1vw;
-    width: 1vw;
-    margin-right: 3vw;
-    background-color: #C9B0D1;
-    border: none;
-    border-radius: 2vw;
+.mainSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
 }
 
-.simpleMenuBtn:hover{
-    background-color: #9854c2;
-}
-
-.simpleMenuBtn:focus{
-    background-color: #8e69a5;
-}
-
-.topScroll {
-    display: inline;
-    flex: 0 0 100vw;
-    overflow-y: scroll;
-    overflow-x: scroll;
-    margin-top: 5vw;
+.logo {
+    grid-column-start: 3;
+    grid-column-end: span 5;
+    text-align: center;
+    margin-top: 10vh;
 }
 
 .home{
@@ -92,7 +108,7 @@ body {
 
 .name{
     font-family: "Berkshire Swash", serif;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: left;
     margin: auto;
     margin-top: 5vh;
@@ -113,8 +129,6 @@ body {
     overflow-x: scroll;
 }
 
-
-
 .Hscroll {
     width: 100vw;
     display: flex;
@@ -128,18 +142,37 @@ body {
     height: 85vh;
 }
 
-.abLeft{
-    width: 40vm;
-    margin: 2.5%;
-    margin-left: 5%;
-    float: left;
-    text-align: left;
+.abPic{
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+.abTitle {
+    grid-column-start: 6;
+    grid-column-end: span 3;
+    grid-row: 1;
+    align-self: end;
+    margin: auto;
+    font-size: 5rem;
+}
+
+.abBio {
+    grid-column-start: 6;
+    grid-column-end: span 3;
+    grid-row: 2;
+    height: 50vh;
+    align-self: start;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
 }
 
 .abRight{
-    width: 85rem;
-    margin: 2.5%;
-    float: right;
+    grid-column-start: 5;
+    grid-column-end: span 4;
+    float: left;
     text-align: left;
     overflow-wrap: auto;
 }
@@ -169,9 +202,59 @@ body {
 }
 
 .topText{
-    margin-left: 5vw;
+    grid-column-start: 1;
+    grid-column-end: span 4;
     text-align: center;
+}
 
+.preview1{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row: 2;
+}
+
+.preview2{
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row: 2;
+}
+
+.preview3{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row: 3;
+}
+
+.preview4{
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row: 3;
+}
+
+.lgPreview {
+    grid-column-start: 5;
+    grid-column-end: span 6;
+    grid-row: 1 / span 3;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-self: flex-end;
+}
+
+.preview {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.smallBox{
+    background-color: white;
+    padding: 1.5rem;
+    padding-top: 1rem;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 80%;
 }
 
 .pfLeft{
@@ -273,18 +356,9 @@ body {
 }
 
 .previews{
+    grid-column-start: 3;
+    grid-column-end: span 3;
     display: flex;
-}
-
-.smallBox{
-    background-color: white;
-    margin: 2vw;
-    padding: 1.5vw;
-    padding-top: 1vw;
-    border-radius: 1vw;
-    height: 27vw;
-    width: 30vw;
-    text-align: center;
 }
 
 .medBox{
@@ -340,7 +414,7 @@ body {
 }
 
 .smallImg{
-    width: 22vw;
+    width: 100%;
     margin-top: 1vh;
     object-fit: contain;
 }
