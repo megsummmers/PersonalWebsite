@@ -75,6 +75,28 @@ function moveCircle(num){
     }
 }
 
+function changePreview(num){
+    switch(num){
+        case 1:
+            document.getElementById("lgPreview").style.backgroundImage = "url('images/WB_title.png')";
+            document.getElementById("tagline").innerHTML = "3D survival game made in Unity C#";
+            break;
+        case 2:
+            document.getElementById("lgPreview").style.backgroundImage = "url('images/LC_outside3.jpeg')";
+            document.getElementById("tagline").innerHTML = "3D environment made in Blender";
+            break;
+        case 3:
+            document.getElementById("lgPreview").style.backgroundImage = "url('images/zine_full1.png')";
+            document.getElementById("tagline").innerHTML = "Paper zine drawn in Procreate";
+            break;
+        case 4:
+            document.getElementById("lgPreview").style.backgroundImage = "url('images/Rb_(1).png')";
+            document.getElementById("tagline").innerHTML = "2D Puzzle game made in Unity C#";
+            break;
+    }
+    num = 1;
+}
+
 function changeSection(num){
     
     switch(num){

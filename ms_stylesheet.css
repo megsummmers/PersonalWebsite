@@ -5,7 +5,7 @@
 
 html {
     background-repeat:inherit;
-    background-image: linear-gradient(to bottom right, #AB89B5, #C9B0D1, #EAE2ED);
+    background-color: #e8d6ee;
     font-family: "Poppins", sans-serif;
 }
 
@@ -40,13 +40,22 @@ h4 {
     font-weight: 400;
 }
 
+.warning {
+    position: fixed;
+    bottom: 3vh;
+    right: 1vw;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
 .menu {
     width: 40vw;
     margin: 1vw auto;
     padding: 1vw;
     height: 3vh;
     top: 0;
-    background-color: #EAE2ED;
+    background-color: #b08adc;
     border-radius: 2vw;
     align-items: center;
     text-align: center;
@@ -62,11 +71,11 @@ h4 {
     padding-right: 1.5rem;
     text-align: center;
     color: #48314E;
-    background-color: #EAE2ED;
+    background-color: #b08adc;
 }
 
 #menuBtn:hover{
-    color: #AB89B5;
+    color: #b08adc;
 }
 
 .simpleMenu {
@@ -84,18 +93,47 @@ h4 {
 
 .mainSection {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* 10 colums*/
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 90vh;
+    margin-top: 20vh;
     width: 100%;
     align-items: center;
 }
 
 .logo {
-    grid-column-start: 3;
-    grid-column-end: span 5;
+    grid-column: 3 / span 6;
     text-align: center;
-    margin-top: 10vh;
+    padding: 3rem;
+    height: 80%;
+    border-top: 0.5vw #faedff solid;
+    border-bottom: 2vh #9c79a9 solid;
+    border-right: 2vw #faedff solid;
+    border-left: 2vw #faedff solid;
+    border-radius: 15rem 15rem 0 0;
+    background-image: linear-gradient(to top, #b3ceff, #b08adc);
+}
+
+.windowL {
+    grid-column: 1 / span 2;
+    background-image: linear-gradient(to top right, #b3ceff, #f9acc5, transparent);
+    border-bottom: 2vh #9c79a9 solid;
+    border-top: 0.5vw #faedff solid;
+    border-right: 2vw #faedff solid;
+    height: 100%;
+    margin-right: 5vw;
+    border-radius: 0 15rem 0 0;
+}
+
+.windowR {
+    grid-column: 9 / span 2;
+    background-image: linear-gradient(to top left, #b3ceff, #f9acc5, transparent);
+    border-bottom: 2vh #9c79a9 solid;
+    border-top: 0.5vw #faedff solid;
+    border-left: 2vw #faedff solid;
+    height: 100%;
+    margin-left: 5vw;
+    border-radius: 15rem 0 0 0;
 }
 
 .home{
@@ -139,34 +177,51 @@ h4 {
 .about {
     display: flex;
     text-align: left;
-    height: 85vh;
+    height: 90vh;
 }
 
 .abPic{
-    grid-column-start: 2;
-    grid-column-end: span 4;
-    grid-row-start: 1;
-    grid-row-end: span 2;
+    grid-column: 7 / span 4;
+    grid-row: 1 / span 4;
+    background-image: url("images/Headshot_2025.jpg");
+    background-size: cover;
+    border-bottom: 2vh #9c79a9 solid;
+    border-top: 0.5vw #faedff solid;
+    border-right: 2vw #faedff solid;
+    width: 28vw;
+    height: 100%;
+    margin-left: 4vw;
+    border-radius: 30% 30% 0 0;
+}
+
+.abWindow {
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 4;
+    background-image: linear-gradient(to top right, #b3ceff, #f9acc5, transparent);
+    border-bottom: 2vh #9c79a9 solid;
+    border-top: 0.5vw #faedff solid;
+    border-left: 2vw #faedff solid;
+    height: 100%;
+    border-radius: 30% 30% 0 0;
 }
 
 .abTitle {
-    grid-column-start: 6;
-    grid-column-end: span 3;
-    grid-row: 1;
+    grid-column-start: 3;
+    grid-column-end: span 4;
+    grid-row: 2;
     align-self: end;
     margin: auto;
     font-size: 5rem;
 }
 
 .abBio {
-    grid-column-start: 6;
-    grid-column-end: span 3;
-    grid-row: 2;
-    height: 50vh;
-    align-self: start;
-    width: 100%;
-    margin-top: 2rem;
-    padding: 2rem;
+    grid-column-start: 2;
+    grid-column-end: span 5;
+    grid-row: 3 / span 2;
+    width: 90%;
+    margin-bottom: 2rem;
+    margin-left: 6vw;
+    padding-bottom: 4rem;
 }
 
 .abRight{
@@ -210,41 +265,49 @@ h4 {
 .preview1{
     grid-column-start: 1;
     grid-column-end: span 2;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .preview2{
     grid-column-start: 3;
     grid-column-end: span 2;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .preview3{
     grid-column-start: 1;
     grid-column-end: span 2;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .preview4{
     grid-column-start: 3;
     grid-column-end: span 2;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .lgPreview {
     grid-column-start: 5;
     grid-column-end: span 6;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
     padding-left: 2rem;
     padding-right: 2rem;
-    align-self: flex-end;
+    align-content: flex-end;
+    height: 100%;
+    width: 90%;
+    background-image: url("images/WB_title.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .preview {
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 2rem;
     text-align: center;
     border-radius: 10%;
+    cursor: pointer;
 }
 
 .smallBox{
@@ -367,15 +430,11 @@ h4 {
     margin-bottom: 0;
     padding: 1vw;
     border-radius: 1vw;
-    height: 25vw;
-    width: 50vw;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
 .bigBox{
     background-color: white;
-    height: 70vh;
-    width: 75vw;
     border-radius: 1rem;
     flex-basis: 100rem;
     flex-shrink: 0;

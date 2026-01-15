@@ -14,23 +14,34 @@
         <button id="menuBtn" onclick="moveCircle(2)">PORTFOLIO</button>
         <button id="menuBtn" onclick="moveCircle(3)">ABOUT ME</button>
     </div>
+    <div class="warning">
+      <h5 style="margin: 0;">This website is still a work in progress,<br>if you encounter any issues, use this link:</h5>
+      <h4 style="margin: 0.5rem 0 0 0; text-align: center;"><a href="https://megsumm10.wixsite.com/msummers">Visit my old website</a></h4>
+    </div>
     <div style="display: flex; flex-direction: column;">
         <!--------------------- TITLE SECTION ----------------------->
         <div id="name" class="mainSection">
+          <div class="windowL">
+              <p>&nbsp;</p>
+            </div>
           <div class="logo">
             <img src="images/Name_logo.png" alt="" style="width: 100%">
             <p>Indigenous Game Designer and Programmer</p>
           </div>
+          <div class="windowR">
+              <p>&nbsp;</p>
+            </div>
         </div>
           <!--------------------- ABOUT ME SECTION ---------------------->
         <div id="AboutSec" class="mainSection">
-            <div class="abPic">
-              <img src="images/Picture.jpg" alt="" style="border-radius: 50%; width: 25vw; border-bottom: 2vh #EAE2ED solid; border-right: 2vw #EAE2ED solid">
+            <div class="abPic"></div>
+            <div class="abWindow">
+              <p>&nbsp;</p>
             </div>
             <div class="abTitle">
               <h1 class="name">About the Artist</h1>
             </div>
-            <div class="medBox abBio" style="height: 50vh;">
+            <div class="abBio" style="height: 50vh;">
                 <div id="Ab1" style="display: none;">
                     <h3>Professional Information:</h3>
                     <div>
@@ -107,34 +118,34 @@
             <h2>Featured Projects</h2>
             <h4>Highlights of my work from over the years</h4>
           </div>
-          <div class="lgPreview">
-            <img src="images/WB_title.png" alt="Placeholder" class="smallImg">
+          <div class="lgPreview" id="lgPreview">
+            <h3 id="tagline" style="color:#FFFFFF; text-shadow: 2px 2px 8px #000000;">3D survival game made in Unity</h3>
           </div>
           <div class="preview preview1">
-            <div class="smallBox" style='background-image: url("images/WB_title.png");'>
+            <div class="smallBox"  style='background-image: url("images/WB_title.png");' onclick="changePreview(1)">
               <div>
-                <h3>Winter Break</h3>
+                <h3 style="color:#FFFFFF; text-shadow: 2px 2px 8px #000000;">Winter Break</h3>
               </div>
             </div>
           </div>
           <div class="preview preview2">
-            <div class="smallBox"  style='background-image: url("images/LC_outside3.jpeg");'>
+            <div class="smallBox"  style='background-image: url("images/LC_outside3.jpeg");' onclick="changePreview(2)">
               <div>
-                <h3>A Lost World</h3>
+                <h3 style="color:#FFFFFF; text-shadow: 2px 2px 8px #000000;">A Lost World</h3>
               </div>
             </div>
           </div>
           <div class="preview preview3">
-            <div class="smallBox"  style='background-image: url("images/zine_full1.png");'>
+            <div class="smallBox"  style='background-image: url("images/zine_full1.png");' onclick="changePreview(3)">
               <div>
-                <h3>Grocery Zine</h3>
+                <h3 style="color:#FFFFFF; text-shadow: 2px 2px 8px #000000;">Grocery Zine</h3>
               </div>
             </div>
           </div>
           <div class="preview preview4">
-            <div class="smallBox"  style='background-image: url("images/zine_full1.png");'>
+            <div class="smallBox"  style='background-image: url("images/images/Rb_(1).png");' onclick="changePreview(4)">
               <div>
-                <h3>Reboot</h3>
+                <h3 style="color:#FFFFFF; text-shadow: 2px 2px 8px #000000;">Reboot</h3>
               </div>
             </div>
           </div>
