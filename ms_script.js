@@ -217,7 +217,7 @@ function changeProject(type, side){
     
     for(var i=0; i < pages.length; i++){
         if(i == num){
-            pages[i].style.display = "contents";
+            pages[i].style.display = "grid";
         }else{
             pages[i].style.display = "none";
         }

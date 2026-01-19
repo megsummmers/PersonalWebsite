@@ -151,39 +151,63 @@
           </div>
         </div>
         <!--------------------- PORTFOLIO SECTION ---------------------->
-        <div id="PortfolioSec" class="mainSection" >
+        <div id="PortfolioSec" class="mainSection" style="margin-bottom: 10vh;" >
           <div class="portfolio">
             <!--------------------- BOTTOM PAGE --------------------->
             <div class="sections">
-              <button class="secBtn" id="secBtn" onclick="changeSection(1)">GAMES</button>
-            <button class="secBtn" onclick="changeSection(2)">3D WORK</button>
-            <button class="secBtn" onclick="changeSection(3)">GRAPHIC</button>
+              <button class="secBtn" style="grid-column: 1; background-color: #FFFFFF;" id="secBtn" onclick="changeSection(1)">GAMES</button>
+              <button class="secBtn" style="grid-column: 2;" onclick="changeSection(2)">3D WORK</button>
+              <button class="secBtn" style="grid-column: 3;" onclick="changeSection(3)">GRAPHIC</button>
+            </div>
+            <div class="leftArrow">
+              <button class="pfFloatBtn" id="Galeft" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
+            </div>
+            <div class="rightArrow">
+               <button class="pfFloatBtn" style="border-radius: 0 1rem 1rem 0;" id="Garight" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
             </div>
               <!------------------- VIDEO GAME SECTION ------------------->
-              <div class="bigBox" id="GameSec" style="border-top-left-radius: 0;border-top-right-radius: 0;">
-                <button id="Galeft" style="position: relative; right: 30vw" class="pfFloatBtn" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
-                <div id="PfGa1" style="display: contents">
-                  <div class="pfLeft">
-                    <div class="pfTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Winter Break</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/WB_title.png" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
-                    </div>
+              <div class="content" id="GameSec">
+                <div id="PfGa1" class="project">
+                  <div class="pfTitle">
+                    <h2 style="margin: 0.2rem">Winter Break</h2>
                   </div>
-                  <div class="pfRight">
-                    <h2>Created in Unity/C# in Collaboration with Percy Ngyuen & Angel Cella Cenerini</h2>
+                  <div class="pfGallery">
+                    <video width="100%" height="100%" autoplay muted> <source src="images/Winter Break edited.mp4" type="video/mp4"></video>
+                    <img src="images/WB_(28).jpg" alt="Placeholder" class="bigImg">
+                    <img src="images/WB_(29).jpg" alt="Placeholder" class="bigImg">
+                    <img src="images/WB_(30).jpg" alt="Placeholder" class="bigImg">
+                    <img src="images/WB_(31).jpg" alt="Placeholder" class="bigImg">
+                    <img src="images/WB_(33).jpg" alt="Placeholder" class="bigImg">
+                    <img src="images/WB_(34).jpg" alt="Placeholder" class="bigImg">
+                  </div>
+                  <div class="pfSpecs">
+                    <table style="">
+                      <tr>
+                        <th>Date:</th>
+                        <td>April 2022</td>
+                      </tr>
+                      <tr>
+                        <th>Program:</th>
+                        <td>Unity C#</td>
+                      </tr>
+                      <tr>
+                        <th>Collaborators:</th>
+                        <td>Angel Cella Cenerini - 3D modelling</td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td>Percy Ngyuen - UI and Sound design</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pfBio">
                     <p class="pfText">
                       Winter Break is a deceivingly cute survival game where you play as a child trying to keep their snowman alive during winter. You'll have to shovel away the snow and sing to your snowman friend to keep them happy and healthy while the snowstorms come and go. Survive until Christmas to see how the story ends. 
                       ​<br><br>
                       On the outside, the game is cute and fun but when you take a deeper look the true story comes through. This short survival game was made with the idea of divorce and childhood trauma in mind. Its meant to showcase a young child trying to cope with fighting parents by protecting his snowman friend from danger. Throughout the game is you go too close to the house you hear noises of the parents fighting. The final clue is that there is no good ending in the game. Even if you win, the final scene shows that the parents divorced with a fallen picture and an empty yard.
                     </p>
+                  </div>
+                  <div class="pfLinks">
                     <a href="https://megsumm.itch.io/winter-break">
                       <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button>
                     </a>
@@ -192,38 +216,55 @@
                     </a>
                   </div>
                 </div>
-                <div id="PfGa2" style="display: none">
-                  <div class="pfLeft">
-                    <div class="pfTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">No Clue</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/NC_title.png" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(14).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(15).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(16).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(17).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(18).jpg" alt="Placeholder" class="bigImg">
-                      <img src="images/NC_(19).jpg" alt="Placeholder" class="bigImg">
-                    </div>
+                <div id="PfGa2" class="project" style="display: none">
+                  <div class="pfTitle">
+                    <h2 style="margin: 0.2rem">No Clue</h2>
                   </div>
-                  <div class="pfRight">
-                    <h2>Created in Unity/C# in Collaboration with Daniel Cacatian & Alex Lorrain</h2>
+                  <div class="pfGallery">
+                    <img src="images/NC_title.png" alt="Placeholder" class="bigImg">
+                    <img src="images/NC_(14).jpg" alt="Placeholder" class="bigImg">
+                    <img src="images/NC_(15).jpg" alt="Placeholder" class="bigImg">
+                    <img src="images/NC_(16).jpg" alt="Placeholder" class="bigImg">
+                    <img src="images/NC_(17).jpg" alt="Placeholder" class="bigImg">
+                    <img src="images/NC_(18).jpg" alt="Placeholder" class="bigImg">
+                    <img src="images/NC_(19).jpg" alt="Placeholder" class="bigImg">
+                  </div>
+                  <div class="pfSpecs">
+                    <table style="">
+                      <tr>
+                        <th>Date:</th>
+                        <td>March 2022</td>
+                      </tr>
+                      <tr>
+                        <th>Program:</th>
+                        <td>Unity C#</td>
+                      </tr>
+                      <tr>
+                        <th>Collaborators:</th>
+                        <td>Alex Lorrain - 3D modelling</td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td>Daniel Cacatian - UI and Secondary Programmer</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pfBio">
                     <p class="pfText">
                       No Clue is a point-and-click game that sees the player trying to hide evidence in the houses of four infamous horror villains, an alien, a cult leader, a serial killer, and a hitman. You have two minutes to find all the evidence scattered around their unique houses in order to prove their innocence and keep them out of jail.
                       <br><br>
                       This was a group project with the challenge of making a game with only the mouse. We really tried to push the story in this one due to the limited controls. We decided to make the game ironic as you need to prove the innocence of four characters who are clearly suspicious and have bad intentions.
                     </p>
+                  </div>
+                  <div class="pfLinks">
                     <a href="https://megsumm.itch.io/no-clue"><button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button></a>
-                    
                   </div>
                 </div>
-                <div id="PfGa3" style="display: none">
-                  <div class="pfLeft">
+                <div id="PfGa3" class="project" style="display: none">
                     <div class="pfTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Reboot</h2>
+                      <h2 style="margin: 0.2rem">Reboot</h2>
                     </div>
-                    <div class="imgScroll">
+                    <div class="pfGallery">
                       <img src="images/Rb_(1).png" alt="Placeholder" class="bigImg">
                       <img src="images/Rb_(6).png" alt="Placeholder" class="bigImg">
                       <img src="images/Rb_(8).png" alt="Placeholder" class="bigImg">
@@ -231,24 +272,43 @@
                       <img src="images/Rb_(10).png" alt="Placeholder" class="bigImg">
                       <img src="images/Rb_(11).png" alt="Placeholder" class="bigImg">
                     </div>
+                    <div class="pfSpecs">
+                    <table style="">
+                      <tr>
+                        <th>Date:</th>
+                        <td>Febuary 2022</td>
+                      </tr>
+                      <tr>
+                        <th>Program:</th>
+                        <td>Unity C# - 2D engine</td>
+                      </tr>
+                      <tr>
+                        <th>Collaborators:</th>
+                        <td>Luka Akatseru - 2D art and UI design</td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td>Che Tan - Level Designer</td>
+                      </tr>
+                    </table>
                   </div>
-                  <div class="pfRight">
-                    <h2>Created in Unity/C# in Collaboration with Luka Akatseru & Che Tan</h2>
+                  <div class="pfBio">
                     <p class="pfText">
                       Re-boot was a game created from the theme of rebirth.We decided to create a game about a robot trying to escape the laboratory it was made in. Using the robot's ability to shed its body and respawn in a new one the player will solve puzzles to escape. The Player will have to use their head to get out of labratory and free the robot before it runs out of body doubles!
                       <br><br>I contributed the code to this game, having coded the entire thing in Unity and C#. The art was provided by Luka Akatseru and the level/sound design provided by Che Tan</p>
+                  </div>
+                  <div class="pfLinks">
                     <a href="https://megsumm.itch.io/reboot"><button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button></a>
                     <a href="https://drive.google.com/file/d/1M220PQt3WlAeeWmx_6W23LFxVOal-qe9/view">
                       <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
                     </a>
                   </div>
                 </div>
-                <div id="PfGa4" style="display: none">
-                  <div class="pfLeft">
+                <div id="PfGa4" class="project" style="display: none">
                     <div class="pfTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Barn Gambles</h2>
+                      <h2 style="margin: 0.2rem">Barn Gambles</h2>
                     </div>
-                    <div class="imgScroll">
+                    <div class="pfGallery">
                       <img src="images/BG_title.png" alt="Placeholder" class="bigImg">
                       <img src="images/BG_(20).jpg" alt="Placeholder" class="bigImg">
                       <img src="images/BG_(21).jpg" alt="Placeholder" class="bigImg">
@@ -257,41 +317,67 @@
                       <img src="images/BG_(25).jpg" alt="Placeholder" class="bigImg">
                       <img src="images/BG_(26).jpg" alt="Placeholder" class="bigImg">
                     </div>
+                    <div class="pfSpecs">
+                    <table style="">
+                      <tr>
+                        <th>Date:</th>
+                        <td>November 2022</td>
+                      </tr>
+                      <tr>
+                        <th>Program:</th>
+                        <td>Unity C# - 3D engine</td>
+                      </tr>
+                      <tr>
+                        <th>Collaborators:</th>
+                        <td>Angel Cella Cenerini - 3D Modelling and UI design</td>
+                      </tr>
+                    </table>
                   </div>
-                  <div class="pfRight">
-                    <h2>Created in Unity/C# in Collaboration with Angel Cella Cenerini</h2>
+                  <div class="pfBio">
                     <p class="pfText">Barn Gambles is a game made around the idea gamebling and how quickly it can become an addiction. Play along as you train your horse and race it along your many rivals to earn money. Continue to invest in your horse's statistics to earn more prize moeny and beat your deadly rival, Gian Pasticcio.
                       <br><br>
                       We decided to focus in on horse gamebling as its the gambline form most associated with statistics. Instead of relying solely on luck, horse gamebling incorperates the status of the horse themselves into the equation. We also wanted our game to be light hearted and fun take on a serious issues to bring a larger audience.</p>
-                      <a href="https://megsumm.itch.io/barn-gambles"><button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button></a>
-                      
+                  </div>
+                  <div class="pfLinks">
+                    <a href="https://megsumm.itch.io/barn-gambles"><button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button></a>
                   </div>
                 </div>
-                <div id="PfGa5" style="display: none">
-                  <div class="pfLeft">
+                <div id="PfGa5" class="project" style="display: none">
                     <div class="pfTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Grow your city</h2>
+                      <h2 style="margin: 0.2rem">Grow your city</h2>
                     </div>
-                    <div class="imgScroll">
+                    <div class="pfGallery">
                       <img src="images/GYC_title.png" alt="Placeholder" class="bigImg">
                       <img src="images/GYC_demo.png" alt="Placeholder" class="bigImg">
                       <img src="images/GYC_prompt.png" alt="Placeholder" class="bigImg">
                       <img src="images/GYC_tut.png" alt="Placeholder" class="bigImg">
                     </div>
+                    <div class="pfSpecs">
+                    <table style="">
+                      <tr>
+                        <th>Date:</th>
+                        <td>March 2023</td>
+                      </tr>
+                      <tr>
+                        <th>Program:</th>
+                        <td>Unity C# - 2D engine</td>
+                      </tr>
+                    </table>
                   </div>
-                  <div class="pfRight">
-                    <h2>Created in Unity/C# As a research project about environment awareness</h2>
+                  <div class="pfBio">
                     <p class="pfText">Grow your city is a 2D top-down game centred around resource management and maintaining the health of your worlds environment. The core gameplay consists of managing and balancing your city's resources, population and the well-being of the environment around you. Throughout the game, the player will also be faced with scenarios meant to mimic real-life issues to judge your reaction. In the end, your score will reflect your choices throughout the game and how your priorities would reflect in real life.
                       <br><br>
                       I set out to explore the question, "In the age of constant media intake, how conscious are we of our effect on the environment and what we can do to help?" The goal is to push the players to make decisions and live through the consequences to learn about their environmental impact. The "best" score of the game is achieving the perfect balance of evolving your town and increasing your population while still maintaining the health of world you live in. </p>
-                      <a href="https://megsumm.itch.io/grow-your-city"><button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button></a>
+                      
+                  </div>
+                  <div class="pfLinks">
+                    <a href="https://megsumm.itch.io/grow-your-city"><button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-download"></i></button></a>
                     </a>
                   </div>
                 </div>
-                <button id="Garight" style="position: relative; margin-top: 30vh; left: 43vw" class="pfFloatBtn" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
               </div>
               <!-------------------- 3D MODELLING SECTION -------------------->
-              <div class="bigBox" id="ModelSec" style="display: none;border-top-left-radius: 0;border-top-right-radius: 0;">
+              <div class="content" id="ModelSec" style="display: none;border-top-left-radius: 0;border-top-right-radius: 0;">
                 <button id="3Dleft" style="position: relative; right: 30vw" class="pfFloatBtn" onclick="changeProject('Pf3D', 'left')"><i class="fa fa-chevron-left"></i></button>
                 <div id="Pf3D1" style="display: contents">
                   <div class="pfLeft">
@@ -433,7 +519,7 @@
                 <button id="3Dright" style="position: relative; margin-top: 30vh; left: 48vw" class="pfFloatBtn" onclick="changeProject('Pf3D', 'right')"><i class="fa fa-chevron-right"></i></button>
               </div>
               <!--------------- GRAPHIC DESIGN SECTION ------------->
-              <div class="bigBox" id="DesignSec" style="display: none;border-top-left-radius: 0;border-top-right-radius: 0;">
+              <div class="content" id="DesignSec" style="display: none;border-top-left-radius: 0;border-top-right-radius: 0;">
                 <button id="Ranleft" style="position: relative; right: 30vw" class="pfFloatBtn" onclick="changeProject('PfRan', 'left')"><i class="fa fa-chevron-left"></i></button>
                 <div id="PfRan1" style="display: contents">
                   <div class="pfLeft">

@@ -40,6 +40,27 @@ h4 {
     font-weight: 400;
 }
 
+h5 {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+th {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
 .warning {
     position: fixed;
     bottom: 3vh;
@@ -160,11 +181,10 @@ h4 {
 }
 
 .portfolio {
+    display: grid;
+    grid-column: 2 / span 8;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: left;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    overflow-y: hidden;
-    overflow-x: scroll;
 }
 
 .Hscroll {
@@ -340,8 +360,8 @@ h4 {
     height: 45vh;
     font-size: 1rem;
     background-color: #EAE2ED;
-    padding: 2vh;
-    margin-bottom: 1vh;
+    padding: 0.5rem;
+    margin: 0;
     overflow-y: scroll;
 }
 
@@ -363,11 +383,9 @@ h4 {
 }
 
 .pfFloatBtn{
-    height: 8vh;
-    width: 5vh;
+    height: 12vh;
     border: none;
-    border-radius: 1vw;
-    margin-top: 30vh;
+    border-radius: 1rem 0 0 1rem;
     font-size: 3rem;
     background-color: white;
     color: #ab89b5;
@@ -377,20 +395,86 @@ h4 {
     color: #593b62;
 }
 
+.leftArrow {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rightArrow {
+    grid-column: 9;
+    grid-row: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.content {
+    grid-column: 1 / span all;
+    grid-row: 2;
+    background-color: white;
+    border: 0.5rem #b08adc;
+    border-radius: 0.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr ; 
+    gap: 1rem;
+    margin: 1rem;
+}
+
 .pfTitle {
-    display: inline-flex;
-    align-items: end;
-    width: 50rem;
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    margin-top: 0.5rem;
+}
+
+.pfGallery{
+    grid-column: 1 / span 5;
+    grid-row: 2 / span 3;
+    overflow: auto;
+    white-space: nowrap;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.pfSpecs {
+    grid-column: 6 / span 4;
+    grid-row: 2;
+}
+
+.pfBio {
+    grid-column: 6 / span 4;
+    grid-row: 3 / span 3;
+}
+
+.pfLinks {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+}
+
+.pfNav {
+    grid-column: 1 / span all;
+    grid-row: 5;
 }
 
 .sections {
-    width: 75vw;
-    height: 5vh;
-    margin-left: 12vw;
-    margin-top: 5vh;
+    grid-column: 1 / span all;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #EAE2ED;
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    justify-items: center;
 }
 
 .secBtn {
@@ -398,13 +482,11 @@ h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     border: none;
-    width: 20vw;
-    height: 4vh;
+    height: 5vh;
+    width: 95%;
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
-    margin-right: 2vw;
-    margin-left: 2.5vw;
-    margin-top: 1vh;
+    margin-top: 0.8rem;
     color:#48314E;
 }
 
@@ -431,17 +513,6 @@ h4 {
     padding: 1vw;
     border-radius: 1vw;
     overflow: hidden;
-}
-
-.bigBox{
-    background-color: white;
-    border-radius: 1rem;
-    flex-basis: 100rem;
-    flex-shrink: 0;
-    flex-grow: 0;
-    margin-bottom: 12vh;
-    margin-left: 12vw;
-    margin-right: 12vw;
 }
 
 .txtbox {
@@ -478,13 +549,7 @@ h4 {
     object-fit: contain;
 }
 .bigImg{
-    width: 35vw;
-}
-
-.imgScroll{
-    overflow: auto;
-    white-space: nowrap;
-    width: 50rem;
+    width: 100%;
 }
 
 #circle{
