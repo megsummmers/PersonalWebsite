@@ -6,6 +6,7 @@ let first = true;
 let vscroll = true;
 let screenW = screen.availWidth;
 let screenH = screen.availHeight;
+let type = "PfGa";
 
 window.addEventListener('load', function(event){
     document.getElementById("topScroll").addEventListener("scroll", function(){
@@ -104,16 +105,19 @@ function changeSection(num){
             document.getElementById("GameSec").style.display = "block";
             document.getElementById("ModelSec").style.display = "none";
             document.getElementById("DesignSec").style.display = "none";
+            type = "PfGa";
             break;
         case 2:
             document.getElementById("GameSec").style.display = "none";
             document.getElementById("ModelSec").style.display = "block";
             document.getElementById("DesignSec").style.display = "none";
+            type = "Pf3D";
             break;
         case 3:
             document.getElementById("GameSec").style.display = "none";
             document.getElementById("ModelSec").style.display = "none";
             document.getElementById("DesignSec").style.display = "block";
+            type = "PfRan";
             break;
     }
     num = 1;
@@ -144,7 +148,7 @@ function previewJump(type, num, section){
     num = num;
 }
 
-function changeProject(type, side){
+function changeProject(side){
     if(type == 'PfGa'){
         var pages = [5];
         pages[0] = document.getElementById("PfGa1");
@@ -175,7 +179,7 @@ function changeProject(type, side){
         pages[1] = document.getElementById("Pf3D2");
         pages[2] = document.getElementById("Pf3D3");
         pages[3] = document.getElementById("Pf3D4");
-        pages[4] = document.getElementById("Pf3D5");
+        //pages[4] = document.getElementById("Pf3D5");
         // change max
         if(side == "left" && num != 0){
             num -= 1;
@@ -184,14 +188,14 @@ function changeProject(type, side){
         }
         // change arrows
         if(num == 0){
-            document.getElementById("3Dleft").style.display = "none";
-            document.getElementById("3Dright").style.left = "46vw";
-        } else if(num == 4){
-            document.getElementById("3Dright").style.display = "none";
+            document.getElementById("Galeft").style.display = "none";
+            document.getElementById("Garight").style.left = "46vw";
+        } else if(num == 3){
+            document.getElementById("Garight").style.display = "none";
         } else {
-            document.getElementById("3Dleft").style.display = "inline-block";
-            document.getElementById("3Dright").style.display = "inline-block";
-            document.getElementById("3Dright").style.left = "43vw";
+            document.getElementById("Galeft").style.display = "inline-block";
+            document.getElementById("Garight").style.display = "inline-block";
+            document.getElementById("Garight").style.left = "43vw";
         }
     } else if(type == 'PfRan'){
         var pages = [1];
@@ -204,14 +208,14 @@ function changeProject(type, side){
         }
         // change arrows
         if(num == 0){
-            document.getElementById("Ranleft").style.display = "none";
-            document.getElementById("Ranright").style.left = "46vw";
-        } else if(num == 0){
-            document.getElementById("Ranright").style.display = "none";
+            document.getElementById("Galeft").style.display = "none";
+            document.getElementById("Garight").style.left = "46vw";
+        } else if(num == 4){
+            document.getElementById("Garight").style.display = "none";
         } else {
-            document.getElementById("Ranleft").style.display = "inline-block";
-            document.getElementById("Ranright").style.display = "inline-block";
-            document.getElementById("Ranright").style.left = "43vw";
+            document.getElementById("Galeft").style.display = "inline-block";
+            document.getElementById("Garight").style.display = "inline-block";
+            document.getElementById("Garight").style.left = "43vw";
         }
     }
     

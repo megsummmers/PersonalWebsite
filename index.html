@@ -9,33 +9,28 @@
     <title>Margaret Summers</title>
   </head>
   <body id="body">
-    <div class="menu" id="topMenu" style="position: absolute; left: 30vw;">
-        <button id="menuBtn" style="border: none;" onclick="moveCircle(1)">HOME</button>
-        <button id="menuBtn" onclick="moveCircle(2)">PORTFOLIO</button>
-        <button id="menuBtn" onclick="moveCircle(3)">ABOUT ME</button>
+    <div class="menu" id="topMenu" style="position: fixed; bottom: 0px;">
+      <a href="#name" class="menuBtn"><i class="fa-solid fa-house" style="font-size: 2rem;"></i></a>
+      <a href="#AboutSec" class="menuBtn"><i class="fa-solid fa-circle-user" style="font-size: 2rem;"></i></a>
+      <a href="#FeaturedSec" class="menuBtn"><i class="fa-solid fa-star" style="font-size: 2rem;"></i></a>
+      <a href="#PortfolioSec" class="menuBtn"><i class="fa-solid fa-images" style="font-size: 2rem;"></i></a>
     </div>
     <div class="warning">
-      <h5 style="margin: 0;">This website is still a work in progress,<br>if you encounter any issues, use this link:</h5>
-      <h4 style="margin: 0.5rem 0 0 0; text-align: center;"><a href="https://megsumm10.wixsite.com/msummers">Visit my old website</a></h4>
+      <h6 style="margin: 0;">This website is still a work in progress,<br>if you encounter any issues, use this link:</h5>
+      <h5 style="margin: 0.5rem 0 0 0; text-align: center;"><a href="https://megsumm10.wixsite.com/msummers">Visit my old website</a></h4>
     </div>
     <div style="display: flex; flex-direction: column;">
         <!--------------------- TITLE SECTION ----------------------->
         <div id="name" class="mainSection">
-          <div class="windowL">
-              <p>&nbsp;</p>
-            </div>
           <div class="logo">
             <img src="images/Name_logo.png" alt="" style="width: 100%">
             <p>Indigenous Game Designer and Programmer</p>
           </div>
-          <div class="windowR">
-              <p>&nbsp;</p>
-            </div>
         </div>
           <!--------------------- ABOUT ME SECTION ---------------------->
         <div id="AboutSec" class="mainSection">
             <div class="abPic"></div>
-            <div class="window">
+            <div class="window abText">
               <div class="abTitle">
                 <h1 class="name">About the Artist</h1>
               </div>
@@ -113,7 +108,7 @@
         </div>
         <!---------------------- FEATURED PROJECTS --------------------->
         <div id="FeaturedSec" class="mainSection">
-          <div class="topText">
+          <div class="topText window">
             <h2>Featured Projects</h2>
             <h4>Highlights of my work from over the years</h4>
           </div>
@@ -150,7 +145,7 @@
           </div>
         </div>
         <!--------------------- PORTFOLIO SECTION ---------------------->
-        <div id="PortfolioSec" class="mainSection" style="margin-bottom: 10vh;" >
+        <div id="PortfolioSec" class="mainSection">
           <div class="portfolio">
             <!--------------------- BOTTOM PAGE --------------------->
             <div class="sections">
@@ -159,10 +154,10 @@
               <button class="secBtn" style="grid-column: 3;" onclick="changeSection(3)">GRAPHIC</button>
             </div>
             <div class="leftArrow">
-              <button class="pfFloatBtn" id="Galeft" onclick="changeProject('PfGa', 'left')"><i class="fa fa-chevron-left"></i></button>
+              <button class="pfFloatBtn" id="Galeft" onclick="changeProject('left')"><i class="fa fa-chevron-left"></i></button>
             </div>
             <div class="rightArrow">
-               <button class="pfFloatBtn" style="border-radius: 0 1rem 1rem 0;" id="Garight" onclick="changeProject('PfGa', 'right')"><i class="fa fa-chevron-right"></i></button>
+               <button class="pfFloatBtn" style="border-radius: 0 1rem 1rem 0;" id="Garight" onclick="changeProject('right')"><i class="fa fa-chevron-right"></i></button>
             </div>
               <!------------------- VIDEO GAME SECTION ------------------->
               <div class="content" id="GameSec">
@@ -378,128 +373,174 @@
                 </div>
               </div>
               <!-------------------- 3D MODELLING SECTION -------------------->
-              <div class="content" id="ModelSec" style="display: none;border-top-left-radius: 0;border-top-right-radius: 0;">
-                <button id="3Dleft" style="position: relative; right: 30vw" class="pfFloatBtn" onclick="changeProject('Pf3D', 'left')"><i class="fa fa-chevron-left"></i></button>
-                <div id="Pf3D1" style="display: contents">
-                  <div class="pfLeft">
-                    <div class="pfTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">A lost world</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/LC_cave1.jpeg" alt="Placeholder" class="bigImg">
+              <div class="content" id="ModelSec" style="display: none;">
+                <div id="Pf3D1" class="project">
+                  <div class="pfTitle">
+                    <h2 style="margin: 0.2rem">A Lost World</h2>
+                  </div>
+                  <div class="pfGallery">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RGzvnFl1sUY?si=b8dsS83n6kLY0-Ui" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="images/LC_cave1.jpeg" alt="Placeholder" class="bigImg">
                       <img src="images/LC_cave2.jpeg" alt="Placeholder" class="bigImg">
                       <img src="images/LC_cave3.jpeg" alt="Placeholder" class="bigImg">
                       <img src="images/LC_outside1.jpeg" alt="Placeholder" class="bigImg">
                       <img src="images/LC_outside2.jpeg" alt="Placeholder" class="bigImg">
                       <img src="images/LC_outside3.jpeg" alt="Placeholder" class="bigImg">
                       <img src="images/LC_outside4jpeg" alt="Placeholder" class="bigImg">
-                    </div>
                   </div>
-                  <div class="pfRight">
-                    <h2>Created in Blender from Jan to April 2023</h2>
+                  <div class="pfSpecs">
+                    <table style="">
+                      <tr>
+                        <th>Date:</th>
+                        <td>April 2023</td>
+                      </tr>
+                      <tr>
+                        <th>Program:</th>
+                        <td>Blender 3D</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pfBio">
                     <p class="pfText">
                       A lost world was a project to create a 3D environment based on a fantasy world. The viewer is walked through 3 small tableau environments from a different world as they attempt to deciper what happened to the lost world.
                       <br><br>
                       Explore through the abandonned mine shaft overrun with crystals, the flower field, the ruins of a temple to make it see the extent of the world at the cliff's edge. This project took a full semster to make and pushed my knowledge of blender and textures. 
                     </p>
-                    <a href="https://youtu.be/o5y3mgXqeO4" target="_blank" rel="noopener noreferrer">
-                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
-                    </a>
                   </div>
                 </div>
-                <div id="Pf3D2" style="display: none">
-                  <div class="pfLeft">
-                    <div class="pfTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Realistic environment</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/Env_1.png" alt="Placeholder" class="bigImg">
+                <div id="Pf3D2" class="project" style="display: none">
+                  <div class="pfTitle">
+                    <h2 style="margin: 0.2rem">A cold future</h2>
+                  </div>
+                  <div class="pfGallery">
+                    <img src="images/Env_1.png" alt="Placeholder" class="bigImg">
                       <img src="images/Env_2.png" alt="Placeholder" class="bigImg">
                       <img src="images/Env_3.png" alt="Placeholder" class="bigImg">
                       <img src="images/Env_4.png" alt="Placeholder" class="bigImg">
-                    </div>
                   </div>
-                  <div class="pfRight">
-                    <h2>Created in BlenderCharacter Model made in Blender 2021</h2>
+                  <div class="pfSpecs">
+                    <table style="">
+                      <tr>
+                        <th>Date:</th>
+                        <td>April 2021</td>
+                      </tr>
+                      <tr>
+                        <th>Program:</th>
+                        <td>Blender 3D</td>
+                      </tr>
+                      <tr>
+                        <th>Collaborators:</th>
+                        <td>Margaret Beaumont-Savvas - Foliage and chair</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pfBio">
                     <p class="pfText">
                       This was a collaborative blender project with Margaret Beaumont-Savvas. We were tasked with turning a pre-exisiting space into a futurisitc environment. We chose a place from the Palais de Congres in Montreal, QC. There was an art piece meant to mimic trees so we decided to turn it into actual trees.
                       <br><br>
                       Working togther we modelled the entire scene ourseleves including a brand new fountain, trees lining the space and comfortable seats on the grass. The lighting was a combination of the fountain lights and purple lights to help the trees survive indoors.
                     </p>
                   </div>
+                  
                 </div>
-                <div id="Pf3D3" style="display: none">
-                  <div class="pfLeft">
-                    <div class="pfTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Character Model</h2>
-                    </div>
-                    <div class="imgScroll">
+                <div id="Pf3D3" class="project" style="display: none">
+                  <div class="pfTitle">
+                    <h2 style="margin: 0.2rem">Character Design</h2>
+                  </div>
+                  <div class="pfGallery">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4qM_heWxNtU?si=qNhl-l-zVgSc731p" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       <img src="images/BearC_1.png" alt="Placeholder" class="bigImg">
                       <img src="images/BearC_2.png" alt="Placeholder" class="bigImg">
                       <img src="images/BearC_3.png" alt="Placeholder" class="bigImg">
                       <img src="images/BearC_4.png" alt="Placeholder" class="bigImg">
-                    </div>
                   </div>
-                  <div class="pfRight">
-                    <h2>Created in BlenderCharacter Model made in Blender 2022</h2>
+                  <div class="pfSpecs">
+                    <table style="">
+                      <tr>
+                        <th>Date:</th>
+                        <td>March 2022</td>
+                      </tr>
+                      <tr>
+                        <th>Program:</th>
+                        <td>Blender 3D</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pfBio">
                     <p class="pfText">
                       This character was created by scratch to learn about rigging and animating a human like model. Her design is meant to look like a young girl in a bear sweater with a generally cyberpunk aesthetic. Her focal point, the bear sweater, was meant to be cute and stylized but also give her a more unique look.
                       <br><br>
                       On top of modelling this character, a walk cycle was also made to test out animating in blender and understanding the anatomy of a walk cycle. After animating her walk cycle, she was also brought into the game engine unity to test the animation further.
                     </p>
-                    <a href="https://youtu.be/4qM_heWxNtU" target="_blank" rel="noopener noreferrer">
-                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
-                    </a>
                   </div>
+            
                 </div>
-                <div id="Pf3D3" style="display: none">
-                  <div class="pfLeft">
-                    <div class="pfTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Diorama</h2>
-                    </div>
-                    <div class="imgScroll">
-                      <img src="images/Diorama_1.png" alt="Placeholder" class="bigImg">
+                <div id="Pf3D3" class="project" style="display: none">
+                   <div class="pfTitle">
+                    <h2 style="margin: 0.2rem">Haunted House</h2>
+                  </div>
+                  <div class="pfGallery">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/v9f21M7lM4g?si=DcfbjInPW-tUTGCm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="images/Diorama_1.png" alt="Placeholder" class="bigImg">
                       <img src="images/Diorama_2.png" alt="Placeholder" class="bigImg">
                       <img src="images/Diorama_3.png" alt="Placeholder" class="bigImg">
                       <img src="images/Diorama_4.png" alt="Placeholder" class="bigImg">
                       <img src="images/Diorama_5.png" alt="Placeholder" class="bigImg">
                       <img src="images/Diorama_6.png" alt="Placeholder" class="bigImg">
-                    </div>
                   </div>
-                  <div class="pfRight">
-                    <h2>Created in Blender, this haunted house model made in 2022</h2>
+                  <div class="pfSpecs">
+                    <table style="">
+                      <tr>
+                        <th>Date:</th>
+                        <td>April 2021</td>
+                      </tr>
+                      <tr>
+                        <th>Program:</th>
+                        <td>Blender 3D</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pfBio">
                     <p class="pfText">
                       This diorama was made as a low-poly modelling exercise as well as a way to test darker lighting. The creative process behind this house was developing a wide range of small props to make the house look haunted and creepy while still embracing the cute aspect of low-poly models.
                       <br><br>
                       As for the lighting, the test was to light the scene almost completely from props on the scene. There are lights inside the house to act as a main light source with smaller sources giving more colour and light to the scene. This includes a pentagram in the back that gives off a creepy aesthetic and some lanterns in the front yard to give a more comfortable but still eerie feeling.
                     </p>
-                    <a href="https://youtu.be/v9f21M7lM4g" target="_blank" rel="noopener noreferrer">
-                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
-                    </a>
                   </div>
+            
                 </div>
-                <div id="Pf3D4" style="display: none">
-                  <div class="pfLeft">
-                    <div class="pfTitle">
-                      <h2 class="smallTitle" style="margin-bottom: auto">Self Portrait</h2>
-                    </div>
-                    <div class="imgScroll">
+                <div id="Pf3D4" class="project" style="display: none">
+                  <div class="pfTitle">
+                    <h2 style="margin: 0.2rem">Self Portrait</h2>
+                  </div>
+                  <div class="pfGallery">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/re0Pa8Pe2zo?si=_X_lJLMzqkzpBPx1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
                       <img src="images/FaceM_1.png" alt="Placeholder" class="bigImg">
                       <img src="images/FaceM_2.png_2.png" alt="Placeholder" class="bigImg">
                       <img src="images/FaceM_3.png_3.png" alt="Placeholder" class="bigImg">
-                    </div>
                   </div>
-                  <div class="pfRight">
-                    <h2>Created in Blender, this a self portrait of myself made in 2022</h2>
+                  <div class="pfSpecs">
+                    <table style="">
+                      <tr>
+                        <th>Date:</th>
+                        <td>April 2022</td>
+                      </tr>
+                      <tr>
+                        <th>Program:</th>
+                        <td>Blender 3D</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="pfBio">
                     <p class="pfText">
-                      TBA
-                      <br><br>
-                    </p>
-                    <a href="https://youtu.be/re0Pa8Pe2zo" target="_blank" rel="noopener noreferrer">
-                      <button class="pfBtn" style="padding: 0; font-size: 1.5rem;"><i class="fa fa-video"></i></i></button>
-                    </a>
+                      A self portrait made as an exercise for facial expressions and rigging the face to move.
+                      ​<br><br>
+                     </p>
                   </div>
+                  
                 </div>
+                <!--
                 <div id="Pf3D5" style="display: none">
                   <div class="pfLeft">
                     <div class="pfTitle">
@@ -517,7 +558,7 @@
                     </p>
                   </div>
                 </div>
-                <button id="3Dright" style="position: relative; margin-top: 30vh; left: 48vw" class="pfFloatBtn" onclick="changeProject('Pf3D', 'right')"><i class="fa fa-chevron-right"></i></button>
+              -->
               </div>
               <!--------------- GRAPHIC DESIGN SECTION ------------->
               <div class="content" id="DesignSec" style="display: none;border-top-left-radius: 0;border-top-right-radius: 0;">
